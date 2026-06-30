@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angelo Games Studio — Indie Game Development Studio</title>
+  <meta name="description" content="Angelo Games Studio is an independent game development studio crafting colorful, strategic arcade puzzle games with heart." />
+  <meta name="theme-color" content="#160623" />
+  <meta property="og:title" content="Angelo Games Studio" />
+  <meta property="og:description" content="Colorful indie games, handcrafted with passion." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <span class="grid-glow"></span>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="logo" href="#top" aria-label="Angelo Games Studio home">
+      <span class="logo-mark">✦</span>
+      <span><strong>ANGELO</strong><em>GAMES STUDIO</em></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#game">Game</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#contact">Contact</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Solo indie studio • Arcade puzzle games</p>
+        <h1>We create <span>worlds</span><br />you want to play.</h1>
+        <p class="hero-text">Angelo Games Studio builds colorful, strategic and memorable games with a handcrafted arcade soul.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#game">Explore the Game</a>
+          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-art reveal" aria-label="Game screenshot preview">
+        <div class="floating-chip chip-red">⚂</div>
+        <div class="floating-chip chip-green">▟</div>
+        <div class="floating-chip chip-yellow">◆</div>
+        <div class="phone-frame">
+          <img src="assets/screenshots/screenshot-01.jpeg" alt="Dice Block Puzzle main menu screenshot" />
+        </div>
+        <div class="mini-card card-one">GAME MODE<br><strong>NORMAL / HARD</strong></div>
+        <div class="mini-card card-two">PUZZLE • STRATEGY • ARCADE</div>
+      </div>
+    </section>
+
+    <section class="studio-panel section-wrap" id="about">
+      <div class="about-art reveal" aria-hidden="true">
+        <div class="pixel-character"></div>
+        <div class="desk-world">
+          <span class="cube c1"></span><span class="cube c2"></span><span class="cube c3"></span>
+        </div>
+      </div>
+      <div class="about-copy reveal">
+        <p class="eyebrow">About the studio</p>
+        <h2>Crafted by one. Built with passion.</h2>
+        <p>Angelo Games Studio is an independent game development studio focused on simple ideas turned into fun, polished and replayable interactive experiences.</p>
+        <div class="pill-grid">
+          <span>💜 Made with heart</span>
+          <span>⭐ Player focused</span>
+          <span>💎 Quality first</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="game-section section-wrap" id="game">
+      <div class="game-copy reveal">
+        <p class="eyebrow">Featured game</p>
+        <h2>Dice Block Puzzle <small>Coming Soon</small></h2>
+        <p>A colorful puzzle game that combines dice, block placement, cards and strategic clearing. Choose your mode, plan your moves and master every row.</p>
+        <div class="tags">
+          <span>Puzzle</span><span>Strategy</span><span>Arcade</span><span>Mobile</span>
+        </div>
+        <div class="hero-actions compact">
+          <a class="btn btn-primary" href="#contact">Ask About the Game</a>
+          <a class="btn btn-secondary" href="#screenshots">View Screenshots</a>
+        </div>
+      </div>
+      <div class="game-gallery reveal" id="screenshots">
+        <img class="shot shot-main" src="assets/screenshots/screenshot-02.jpeg" alt="Dice Block Puzzle gameplay screenshot showing hard mode" />
+        <img class="shot" src="assets/screenshots/screenshot-03.jpeg" alt="Dice Block Puzzle gameplay screenshot with card and blocks" />
+        <img class="shot" src="assets/screenshots/screenshot-04.jpeg" alt="Dice Block Puzzle gameplay screenshot with red dice row" />
+        <img class="shot" src="assets/screenshots/screenshot-05.jpeg" alt="Dice Block Puzzle gameplay screenshot with green dice blocks" />
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Let’s build something amazing together.</h2>
+        <p>Have a question, feedback, press request or collaboration idea? Send a message and I’ll get back to you.</p>
+        <a class="email-link" href="mailto:angelopu1990@icloud.com">angelopu1990@icloud.com</a>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <!-- Replace the Formspree URL above with your own endpoint. Messages should forward to angelopu1990@icloud.com. -->
+        <label>
+          Topic
+          <select name="topic" required>
+            <option value="">Select a topic</option>
+            <option>General inquiry</option>
+            <option>Game feedback</option>
+            <option>Publishing / partnership</option>
+            <option>Press</option>
+            <option>Privacy request</option>
+          </select>
+        </label>
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required minlength="2" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="your@email.com" required />
+        </label>
+        <label class="full">
+          Message
+          <textarea name="message" placeholder="Write your message..." required minlength="10"></textarea>
+        </label>
+        <button class="btn btn-primary full" type="submit">Send Message</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="privacy-preview section-wrap" id="privacy">
+      <div class="reveal">
+        <p class="eyebrow">Privacy policy</p>
+        <h2>Your privacy matters.</h2>
+        <p>Angelo Games Studio respects your personal data and keeps privacy information clear, accessible and transparent.</p>
+        <a class="btn btn-secondary" href="privacy.html">Read Full Policy</a>
+      </div>
+      <div class="privacy-points reveal">
+        <span>🛡️ We respect your privacy</span>
+        <span>🔒 We never sell your data</span>
+        <span>👤 You are in control</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo" href="#top"><span class="logo-mark">✦</span><span><strong>ANGELO</strong><em>GAMES STUDIO</em></span></a>
+    <p>© <span id="year"></span> Angelo Games Studio. All rights reserved.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#game">Game</a>
+      <a href="#contact">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
